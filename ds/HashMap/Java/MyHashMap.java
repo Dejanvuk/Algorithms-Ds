@@ -52,6 +52,7 @@ public class MyHashMap<K,V> {
 
     private class LinkedList<K,V>{
         private Node<K, V> head = null;
+        // should add a tail Node so we skip the O(n) worst case insertion
 
         private class Node<K, V> {
             private Node<K, V> next = null;
@@ -156,7 +157,9 @@ public class MyHashMap<K,V> {
             while (tempNode != null) {
                 if (tempNode.key.equals(key)) {
                     return tempNode.value;
-                } else tempNode = tempNode.next;
+                }
+                else
+                    tempNode = tempNode.next;
             }
             return null;
         }

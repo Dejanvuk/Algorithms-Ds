@@ -35,7 +35,7 @@ void mergeSort(int n[], int l, int r)
 {
     if (l < r)
     {
-        int q = (r+l)/2;
+        int q = l + (r-l)/2;
         mergeSort(n, l, q);
         mergeSort(n, q+1, r);
         merge(n, l, q, r);

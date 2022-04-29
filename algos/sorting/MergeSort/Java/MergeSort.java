@@ -1,8 +1,6 @@
-package com.dejanvuk.algos.sorting.MergeSort.Java;
-
 public class MergeSort {
 	public static void main(String[] args) {
-		int[] arr = {5,4,3,2,1};
+		int[] arr = {9,8,7,6,5,4,3,2,1};
 		MergeSort.sort(arr, 0, arr.length - 1);
 		MergeSort.print(arr);
 	}
@@ -10,10 +8,10 @@ public class MergeSort {
 	public static void print(int[] arr) {
 		for(int i = 0; i < arr.length; i++) System.out.print(arr[i] + " ");
 	}
-	
+
 	public static void sort(int arr[],int l,int r) {
 		if(l < r) {
-			int q = (l+r)/2;
+			int q = l + (r - l )/2;
 			sort(arr, l , q);
 			sort(arr, q+1, r);
 			merge(arr, l, q, r);

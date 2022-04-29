@@ -1,5 +1,3 @@
-package com.dejanvuk.algos.sorting.BubbleSort.Java;
-
 public class BubbleSort {
 
 	public static void main(String[] args) {	

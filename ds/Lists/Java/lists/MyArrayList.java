@@ -132,7 +132,7 @@ public class MyArrayList<E> implements MyList<E> {
 	}
 	
 	/**
-	 * Shifts all the elements of the array to the left by 1 starting from the end
+	 * Shifts all the elements of the array to the left by 1 starting from the end up until the index
 	 */
 	public void shiftDataLeft(int index) {
 		Object currObject = data[size-1];
@@ -245,6 +245,7 @@ public class MyArrayList<E> implements MyList<E> {
 
 	/**
 	 * Replaces the element at the specified position in this array list with the specified element
+	 * returns the replaced element
 	 */
 	@SuppressWarnings("unchecked")
 	@Override

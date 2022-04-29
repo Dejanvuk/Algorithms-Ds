@@ -72,7 +72,7 @@ public class MyLinkedList<E> implements MyList<E>{
 	
 	private void addAtHead(E e) {
 		Node<E> n = new Node<E>(e, head);
-		head.next = n;
+		head = n;
 		size++;
 	}
 	
@@ -114,7 +114,9 @@ public class MyLinkedList<E> implements MyList<E>{
 			}
 			else return false;
 		}
-		else return false;	
+		else throw new NullPointerException();
+
+		return false;
 	}
 
 	/**
@@ -122,15 +124,6 @@ public class MyLinkedList<E> implements MyList<E>{
 	 */
 	@Override
 	public void clear() {
-		/*
-		Node<E> curr = head;
-		
-		while(curr != null) {
-			curr.value = null;
-			curr = curr.next;
-		}
-		*/
-		
 		head = null;
 		tail = null;
 		size = 0;
@@ -156,6 +149,8 @@ public class MyLinkedList<E> implements MyList<E>{
 				if(!contains(o)) return false;
 			}
 		}
+		else throw new NullPointerException();
+
 		return true;
 	}
 
@@ -165,10 +160,9 @@ public class MyLinkedList<E> implements MyList<E>{
 	@Override
 	public boolean remove(Object o) {
 		if(o != null) {
-			remove(indexOf(o));
-			return true;
+			return remove(indexOf(o));
 		}
-		return false;
+		else throw new NullPointerException();
 	}
 
 	/**
@@ -184,7 +178,8 @@ public class MyLinkedList<E> implements MyList<E>{
 				if(contains(e)) remove(e);
 			}
 		}
-		
+		else throw new NullPointerException();
+
 		return true;
 	}
 
@@ -201,6 +196,7 @@ public class MyLinkedList<E> implements MyList<E>{
 				if(!contains(e)) remove(e);
 			}
 		}
+		else throw new NullPointerException();
 		
 		return true;
 	}
@@ -260,18 +256,6 @@ public class MyLinkedList<E> implements MyList<E>{
 		int index = -1;
 		
 		if(o != null) {
-			/*
-			Node<E> curr = head;
-			for(int i = 0; curr != null; i++) {
-				if(curr.value.equals(o)) {
-					index = i;
-					break;
-					
-				}
-				curr = curr.next;
-			}
-			return index;
-			*/
 			ListIterator<E> itr = listIterator();
 			while(itr.hasNext()) {
 				E e = itr.next();

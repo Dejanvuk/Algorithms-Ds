@@ -3,6 +3,9 @@ package com.dejanvuk.ds;
 import com.dejanvuk.ds.lists.MyArrayList;
 import com.dejanvuk.ds.lists.MyList;
 
+/*
+Using an Array List
+* */
 public class Heap<E extends Comparable<E>>{
     private MyList<E> list = new MyArrayList<>();
 
