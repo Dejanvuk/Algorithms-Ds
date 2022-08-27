@@ -1,5 +1,5 @@
 /**
- * Brute-force attempt to code 
+ * Brute-force attempt to code pre-fix sum algo
  */
 
 public class PrefixSum {
@@ -21,7 +21,7 @@ public class PrefixSum {
     * O(1)
     */
     private static int query(int[] fenwickTree, int[] prefixSum, int l, int r) {
-        if(l = 0) 
+        if(l == 0) 
             return prefixSum[r];
         else 
             return prefixSum[r] - prefixSum[l - 1];
