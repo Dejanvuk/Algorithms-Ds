@@ -4,20 +4,21 @@
 
 ## Sorting
 <ol>
-<li><a href="">Bubble Sort</a></li>
-<li><a href="">Heap Sort</a></li>
-<li><a href="">Insertion Sort</a></li>
-<li><a href="">Merge Sort</a></li>
-<li><a href="">Quick Sort</a></li>
-<li><a href="">Selection Sort</a></li>
+<li><a href="algos/sorting/BubbleSort">Bubble Sort</a></li>
+<li><a href="algos/sorting/HeapSort">Heap Sort</a></li>
+<li><a href="algos/sorting/InsertionSort">Insertion Sort</a></li>
+<li><a href="algos/sorting/MergeSort">Merge Sort</a></li>
+<li><a href="algos/sorting/QuickSort">Quick Sort</a></li>
+<li><a href="algos/sorting/SelectionSort">Selection Sort</a></li>
 </ol>
 
 ## Data structures
 <ol>
-<li><a href="">HashMap</a></li>
-<li><a href="">LinkedList</a></li>
-<li><a href="">ArrayList</a></li>
-<li><a href="">Queue</a></li>
-<li><a href="">Priority Queue</a></li>
-<li><a href="">Stack</a></li>
+<li><a href="ds/HashMap">HashMap</a></li>
+<li><a href="ds/Lists">LinkedList</a></li>
+<li><a href="ds/Lists">ArrayList</a></li>
+<li><a href="ds/Queue">Queue</a></li>
+<li><a href="ds/Heap">Priority Queue</a></li>
+<li><a href="ds/Stack">Stack</a></li>
+<li><a href="ds/Fenwick tree">Fenwick tree / Binary indexed tree</a></li>
 </ol>
